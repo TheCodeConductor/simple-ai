@@ -1,0 +1,24 @@
+Neuron
+  Outputs an "activation energy" in [0, 1]
+  Activation determined by previous neuron activations, 
+  each multiplied by a weight and added to a singular bias.
+    Passed through a function to force between [0, 1]
+
+Network
+  Takes in at least one input and has at least one output.
+  Composed of neurons.
+  Can have hidden layers in between.
+
+  Measurable cost function, representing the sum of squares
+  of the difference between the intended and actual output.
+
+  Gradient Decent
+    Minimizes the cost function to a local min.
+    Each component of the gradient represents the average amount
+    (across all training samples) that the network needs to adjust
+    the activations of each neuron.
+      Average cost on each neuron
+    Use partial derivative chain rule to calculate the magnitude of
+    effect a change to each weight and bias would have.
+    Adjust accordingly.
+
